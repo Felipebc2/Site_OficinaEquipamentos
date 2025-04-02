@@ -19,22 +19,22 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #ede7e3; /* Background color for the entire website, including individual sections */
   --default-color: #222222; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #172a28; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #008374; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #16697a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #82c0cc; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #fff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #008374; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #01433c; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #008374; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #000000;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffa62b; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #fff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #fff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #82c0cc; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #82c0cc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -53,11 +53,11 @@
 }
 
 .accent-background {
-  --background-color: #008374;
+  --background-color: color-mix(in srgb, #489fb5 90%, white 10%);;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --accent-color: #ffffff;
-  --surface-color: #00b6a1;
+  --heading-color: #222222;
+  --accent-color: #222222;
+  --surface-color: color-mix(in srgb, #489fb5 90%, white 10%);;
   --contrast-color: #ffffff;
 }
 
@@ -231,7 +231,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #008374;
+  --background-color: color-mix(in srgb, #489fb5 90%, white 10%);
   --heading-color: #ffffff;
   color: var(--default-color);
   transition: all 0.5s;
@@ -905,7 +905,7 @@ section,
 }
 
 .hero h2 .accent {
-  color: var(--conrast-color);
+  color: var(--contsrast-color);
 }
 
 .hero p {
@@ -977,7 +977,7 @@ section,
     left: 0;
     right: 0;
     height: calc(50% + 20px);
-    background-color: var(--default-color);
+    background-color: #ede7e3;
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   }
 }
@@ -986,7 +986,7 @@ section,
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: var(--background-color);
+  background: color-mix(in srgb, #489fb5 90%, black 10%);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1003,7 +1003,7 @@ section,
 }
 
 .hero .icon-box .title a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #000000, transparent 20%);
   transition: 0.3s;
 }
 
@@ -1014,16 +1014,16 @@ section,
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #000000, transparent 20%);
 }
 
 .hero .icon-box:hover {
-  background-color: color-mix(in srgb, var(--background-color), white 10%);
+  background-color: color-mix(in srgb, var(--background-color), black 20%);
 }
 
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
-  color: var(--contrast-color);
+  color: #ffa62b;
 }
 
 /*--------------------------------------------------------------
