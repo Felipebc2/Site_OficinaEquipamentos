@@ -1111,6 +1111,57 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Produtos Section
+--------------------------------------------------------------*/
+.Produtos .Produtos-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.Produtos .Produtos-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Produtos .Produtos-filters li:hover,
+.Produtos .Produtos-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.Produtos .Produtos-filters li:first-child {
+  margin-left: 0;
+}
+
+.Produtos .Produtos-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .Produtos .Produtos-filters li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+}
+
+.Produtos .Produtos-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.Produtos .Produtos-content img {
+  transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about h3 {
@@ -1533,16 +1584,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Produtos Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.Produtos .Produtos-filters {
   padding: 0 0 20px 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.Produtos .Produtos-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
@@ -1553,40 +1604,40 @@ section,
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.Produtos .Produtos-filters li:hover,
+.Produtos .Produtos-filters li.filter-active {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.Produtos .Produtos-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.Produtos .Produtos-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .Produtos .Produtos-filters li {
     font-size: 14px;
     margin: 0 5px;
   }
 }
 
-.portfolio .portfolio-content {
+.Produtos .Produtos-content {
   background-color: var(--surface-color);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   height: 100%;
   overflow: hidden;
 }
 
-.portfolio .portfolio-content img {
+.Produtos .Produtos-content img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
 }
 
-.portfolio .portfolio-content .portfolio-info {
+.Produtos .Produtos-content .Produtos-info {
   background-color: var(--background-color);
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 25px 20px;
@@ -1594,29 +1645,29 @@ section,
   z-index: 2;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
+.Produtos .Produtos-content .Produtos-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 a {
+.Produtos .Produtos-content .Produtos-info h4 a {
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info h4 a:hover {
+.Produtos .Produtos-content .Produtos-info h4 a:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
+.Produtos .Produtos-content .Produtos-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-content:hover img {
+.Produtos .Produtos-content:hover img {
   transform: scale(1.1);
 }
 
@@ -2147,24 +2198,24 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# Produtos Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.Produtos-details .Produtos-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .swiper-wrapper {
+.Produtos-details .swiper-wrapper {
   height: auto;
 }
 
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
+.Produtos-details .swiper-button-prev,
+.Produtos-details .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
+.Produtos-details .swiper-button-prev:after,
+.Produtos-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.15);
   font-size: 24px;
@@ -2177,36 +2228,36 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
+.Produtos-details .swiper-button-prev:hover:after,
+.Produtos-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
+  .Produtos-details .swiper-button-prev,
+  .Produtos-details .swiper-button-next {
     display: none;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.Produtos-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.Produtos-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.Produtos-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info h3 {
+.Produtos-details .Produtos-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -2214,7 +2265,7 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-info h3:after {
+.Produtos-details .Produtos-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -2225,26 +2276,26 @@ section,
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
+.Produtos-details .Produtos-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li {
+.Produtos-details .Produtos-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.Produtos-details .Produtos-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.Produtos-details .Produtos-info .btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -2252,28 +2303,28 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.Produtos-details .Produtos-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.portfolio-details .portfolio-description h2 {
+.Produtos-details .Produtos-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.Produtos-details .Produtos-description p {
   padding: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item {
+.Produtos-details .Produtos-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: color-mix(in srgb, var(--default-color), transparent 97%);
   margin-bottom: 50px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+.Produtos-details .Produtos-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid var(--background-color);
@@ -2281,33 +2332,33 @@ section,
   margin: 0 10px 0 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h3 {
+.Produtos-details .Produtos-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.Produtos-details .Produtos-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.Produtos-details .Produtos-description .testimonial-item .quote-icon-left,
+.Produtos-details .Produtos-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+.Produtos-details .Produtos-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.Produtos-details .Produtos-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -2315,7 +2366,7 @@ section,
   transform: scale(-1, -1);
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
+.Produtos-details .Produtos-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
